@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Exercise 3</title>
+    <style>
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .thirteen-a {
+        display: flex;
+        width: 300px;
+        height: 60px;
+        margin-bottom: 30px;
+      }
+      .thirteen-a-item1 {
+        background-color: lightpink;
+        color: white;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .thirteen-a-item1-text {
+        background-color: black;
+        font-size: 20px;
+      }
+      .thirteen-b {
+        width: 300px;
+        height: 60px;
+        display: flex;
+        font-size: 20px;
+      }
+      .thirteen-b-left-section {
+        width: 100px;
+        background-color: lightpink;
+      }
+      .thirteen-b-right-section {
+        background-color: lightblue;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+      .thirteen-b-right-section-left-div {
+        width: 40px;
+      }
+      .thirteen-b-right-section-right-div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="thirteen-a">
+      <div class="thirteen-a-item1">
+        <p class="thirteen-a-item1-text">item1</p>
+      </div>
+      <div style="background-color: lightblue; flex: 1"></div>
+    </div>
+
+    <div class="thirteen-b">
+      <div class="thirteen-b-left-section"></div>
+      <div class="thirteen-b-right-section">
+        <div class="thirteen-b-right-section-left-div">
+          <p>row1</p>
+          <p style="background-color: black; color: white;">row2</p>
+        </div>
+        <div class="thirteen-b-right-section-right-div">
+            <p style="background-color: black; color: white">row2</p>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>

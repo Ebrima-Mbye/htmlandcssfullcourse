@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- 10-07-24. 11:58, at our boys' house -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Exercise 3</title>
+    <style>
+      body {
+        height: 1000px;
+        padding-top: 55px;
+        text-align: center;
+      }
+      h1 {
+        text-decoration: underline;
+      }
+      pre {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family: arial;
+
+        border: 1px solid green;
+        box-shadow: 5px 5px 2px rgb(182, 182, 182);
+
+        background-color: white;
+      }
+      .header-left-section {
+        height: 100%;
+        display: flex;
+        width: 150px;
+        align-items: center;
+        font-weight: bold;
+      }
+      .header-profile-picture-section {
+        height: 100%;
+        display: flex;
+        width: 50px;
+        align-items: center;
+        padding-left: 10px;
+      }
+      .header-profile-picture {
+        width: 40px;
+        border-radius: 20px;
+        height: 40px;
+      }
+      .header-right-section {
+        display: flex;
+        align-items: center;
+        width: 190px;
+        justify-content: space-between;
+      }
+      .header-add-friend-button-section,
+      .header-message-button-section {
+        width: 90px;
+      }
+      .header-add-friend-button,
+      .header-message-button {
+        width: 100%;
+        height: 33px;
+        border-radius: 5px;
+        font-weight: bold;
+        border: none;
+      }
+      .header-add-friend-button {
+        background-color: rgb(70, 107, 231);
+        color: white;
+      }
+      .header-message-button {
+        background-color: rgb(236, 236, 236);
+      }
+
+      .sidebar {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 55px;
+        width: 350px;
+      }
+      .sidebar-profile-pictures-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        background-color: rgb(35, 35, 35);
+      }
+      .sidebar-profile-picture-container {
+        width: 55px;
+        height: 55px;
+        padding-bottom: 6px;
+      }
+      .sidebar-info-section {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+      .sidebar-profile-picture {
+        width: 100%;
+        height: 100%;
+        border-radius: 35px;
+      }
+      .sidebar-info-section {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(61, 60, 60);
+      }
+      .info-section-header {
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: arial;
+        font-weight: bold;
+      }
+      .add-button {
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        font-family: arial;
+        color: rgb(146, 144, 144);
+        cursor: pointer;
+      }
+      .info-section-subsections {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .info-section-subsection {
+        height: 35px;
+      }
+      .info-section-subsections-button {
+        width: 100%;
+        text-align: start;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 15px;
+        color: gray;
+      }
+      .info-section-subsections {
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Just some text while you scroll</h1>
+    <pre>For The Gambia our homeland,
+        we strive and work and pray
+        that all may live in unity, 
+        freedom and peace each day.
+    </pre>
+    <pre>Let justice guide our actions
+        towards the common good,
+        and join our diverse people
+        to prove man's brotherhood.
+    </pre>
+    <pre>
+        We pledge our firm allegiance,
+        our promise we renew.
+        Keep us, great God of nations,
+        to The Gambia ever true.
+    </pre>
+    <div class="header">
+      <div class="header-left-section">
+        <div class="header-profile-picture-section">
+          <img
+            class="header-profile-picture"
+            src="/channel-pictures/channel-3.jpeg"
+          />
+        </div>
+        <div class="header-contact-name-section">
+          <p class="header-contact-name">Aisha Njie</p>
+        </div>
+      </div>
+      <div class="header-right-section">
+        <div class="header-add-friend-button-section">
+          <button class="header-add-friend-button">Add Friend</button>
+        </div>
+        <div class="header-message-button-section">
+          <button class="header-message-button">Message</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-profile-pictures-section">
+        <div class="sidebar-profile-picture-container">
+          <img
+            class="sidebar-profile-picture"
+            src="/channel-pictures/channel-1.jpeg"
+          />
+        </div>
+        <div class="sidebar-profile-picture-container">
+          <img
+            class="sidebar-profile-picture"
+            src="/channel-pictures/channel-2.jpeg"
+          />
+        </div>
+        <div class="sidebar-profile-picture-container">
+          <img
+            class="sidebar-profile-picture"
+            src="/channel-pictures/channel-3.jpeg"
+          />
+        </div>
+      </div>
+      <div class="sidebar-info-section">
+        <div class="info-section-header">
+          <div class="info-container">
+            <p>INFO</p>
+          </div>
+          <div class="add-button-container">
+            <button class="add-button">+</button>
+          </div>
+        </div>
+        <div class="info-section-subsections">
+          <div class="info-section-subsection">
+            <button class="info-section-subsections-button">
+              # new-dideos
+            </button>
+          </div>
+          <div class="info-section-subsection">
+            <button class="info-section-subsections-button"># updates</button>
+          </div>
+          <div class="info-section-subsection">
+            <button class="info-section-subsections-button"># faq</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

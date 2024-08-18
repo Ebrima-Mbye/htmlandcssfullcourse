@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- 07-07-24, 23:00, UTG CAFE, Kanifing Law Faculty -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox Exercise 2</title>
+    <style>
+      button {
+        cursor: pointer;
+      }
+      .twelve-e {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        padding: 0 10px 10px 10px;
+        box-shadow: 2px 2px 2px rgb(182, 182, 182);
+        border-radius: 5px;
+        border: 1px solid rgb(182, 182, 182);
+        margin-bottom: 30px;
+      }
+      .twelve-e-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 25px;
+        padding-top: 10px;
+        padding-bottom: 0;
+      }
+      .twelve-e-button {
+        background-color: rgb(63, 112, 236);
+        color: white;
+        border-radius: 20px;
+        height: 25px;
+        padding: 2px 10px 2px 10px;
+        font-weight: bold;
+      }
+      .twelve-f {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        border: 1px solid black;
+        padding: 0 10px 0 10px;
+        color: white;
+        background-color: rgb(124, 64, 179);
+        font-family: arial;
+        margin-bottom: 30px;
+      }
+      .twelve-f-left-section {
+        width: 75px;
+      }
+      .twelve-f-middle-section {
+        flex: 1;
+      }
+      .twelve-f-right-section {
+        width: 100px;
+      }
+      .twelve-f-search-bar {
+        width: 480px;
+        height: 33px;
+        border-radius: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        color: black;
+        min-width: 100px;
+        max-width: 100%;
+      }
+      .twelve-f-download-button {
+        background-color: transparent;
+        color: white;
+        border-radius: 2px;
+        height: 35px;
+        padding: 2px 15px 2px 15px;
+        margin-right: 10px;
+        border: 1px solid rgb(229, 225, 225);
+        cursor: pointer;
+      }
+      .twelve-g {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 380px;
+        box-shadow: 2px 2px 1px rgb(182, 182, 182);
+        border: 1px solid rgb(182, 182, 182);
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .user-to-follow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .twelve-g-profile-picture-section {
+        width: 70px;
+      }
+      .twelve-g-profile-picture {
+        width: 80%;
+        border-radius: 50%;
+      }
+      .twelve-g-user-details {
+        flex: 1;
+        font-size: 17px;
+        font-family: arial;
+      }
+      .twelve-g-follow-button-section {
+        width: 100px;
+      }
+      .twelve-g-follow-button {
+        background-color: rgb(114, 152, 248);
+        width: 80%;
+        height: 35px;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+      .user-name {
+        font-weight: bold;
+      }
+      .user-popularity {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="twelve-e">
+      <div class="twelve-e-div">
+        <p>Home</p>
+        <button class="twelve-e-button">14</button>
+      </div>
+      <div class="twelve-e-div">
+        <p>Notifications</p>
+        <button class="twelve-e-button">3</button>
+      </div>
+      <div class="twelve-e-div">
+        <p>Messages</p>
+        <button class="twelve-e-button">5</button>
+      </div>
+    </div>
+    <div class="twelve-f">
+      <div class="twelve-f-left-section"><p>Home</p></div>
+      <div class="twleve-f-middle-section">
+        <input class="twelve-f-search-bar" type="search" placeholder="Search" />
+      </div>
+      <div class="twelve-f-right-section">
+        <button class="twelve-f-download-button">Download</button>
+      </div>
+    </div>
+    <div class="twelve-g">
+      <div class="user-to-follow">
+        <div class="twelve-g-profile-picture-section">
+          <img
+            class="twelve-g-profile-picture"
+            src="/channel-pictures/channel-1.jpeg"
+          />
+        </div>
+        <div class="twelve-g-user-details">
+          <div class="user-name"><p>Marques</p></div>
+          <div class="user-aka"><p>busy man</p></div>
+          <div class="user-popularity"><p>Popular</p></div>
+        </div>
+        <div class="twelve-g-follow-button-section">
+          <button class="twelve-g-follow-button">Follow</button>
+        </div>
+      </div>
+
+      <div class="user-to-follow">
+        <div class="twelve-g-profile-picture-section">
+          <img
+            class="twelve-g-profile-picture"
+            src="/channel-pictures/channel-2.jpeg"
+          />
+        </div>
+        <div class="twelve-g-user-details">
+          <div class="user-name"><p>Rex</p></div>
+          <div class="user-aka"><p>Happy Bulldog</p></div>
+          <div class="user-popularity"><p>Popular</p></div>
+        </div>
+        <div class="twelve-g-follow-button-section">
+          <button class="twelve-g-follow-button">Follow</button>
+        </div>
+      </div>
+
+      <div class="user-to-follow">
+        <div class="twelve-g-profile-picture-section">
+          <img
+            class="twelve-g-profile-picture"
+            src="/channel-pictures/channel-3.jpeg"
+          />
+        </div>
+        <div class="twelve-g-user-details">
+          <div class="user-name"><p>olivier</p></div>
+          <div class="user-aka"><p>the cat</p></div>
+          <div class="user-popularity"><p>Popular</p></div>
+        </div>
+        <div class="twelve-g-follow-button-section">
+          <button class="twelve-g-follow-button">Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

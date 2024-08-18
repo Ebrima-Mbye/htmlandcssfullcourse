@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shashow</title>
+    <style>
+      body {
+        background-color: #f9f9f9;
+      }
+      div {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 50px;
+      }
+      /*.resize-me {
+            
+            background-color: green;
+            color: white;
+            resize: both;
+            overflow: hidden;
+        }*/
+
+      .hover-me:hover {
+        box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) inset,
+          -10px -10px 10px white inset;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="resize-me">Resize me</div> -->
+    <div class="hover-me">Hover me</div>
+  </body>
+</html>

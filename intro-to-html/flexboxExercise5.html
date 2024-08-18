@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- 09--7-24, 10:39, at our boys' house -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Exercise 5</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin-bottom: 100px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .thirteen-f {
+        width: 500px;
+        height: 220px;
+        display: flex;
+        font-family: arial;
+        border: 1px solid rgb(182, 182, 182);
+        box-shadow: 5px 5px 2px rgb(182, 182, 182);
+        margin-left: 20px;
+        border-radius: 10px;
+      }
+      .profile-picture-section {
+        display: flex;
+        width: 90px;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      .profile-picture {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+      }
+      .post-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-tweet-section {
+        height: 95px;
+        margin-top: 10px;
+        line-height: 23px;
+      }
+      .sender-info {
+        font-weight: bold;
+      }
+      .tweet-content {
+        font-weight: 510;
+        font-size: 17px;
+      }
+      .sender-tweeter-handle {
+        font-weight: lighter;
+        color: rgb(117, 112, 112);
+      }
+      .youtube-link-section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-left: 0;
+      }
+      .youtube-link-container {
+        display: flex;
+        border-radius: 10px;
+        height: 110px;
+      }
+      .youtube-link-thumnail-section {
+        width: 110px;
+        background-color: rgb(211, 209, 209);
+        border-radius: 20px 0 0 20px;
+        border: 1px solid gray;
+        margin-right: -1px;
+      }
+      .youtube-link-details {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        line-height: 23px;
+        border-radius: 0 20px 20px 0;
+        border: 1px solid gray;
+      }
+      .youtube-site-div {
+        height: 30px;
+        padding-top: 15px;
+        border-radius: 0 10px 0 0;
+      }
+      .youtube-site-text {
+        font-size: 17px;
+      }
+      .youtube-video-title-section {
+        font-size: 15px;
+        font-weight: bold;
+        flex: 1;
+        border-radius: 0 0 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><u>A tweet by @SuperSimpleDex</u></h1>
+    <div class="thirteen-f">
+      <div class="profile-picture-section">
+        <img class="profile-picture" src="/channel-pictures/channel-2.jpeg" alt="">
+      </div>
+      <div class="post-section">
+        <div class="main-tweet-section">
+          <div class="sender-info">
+            <p>
+              supersimple.dev
+              <span class="sender-tweeter-handle">@SuperSimpleDev</span>
+            </p>
+          </div>
+          <div class="tweet-content">
+            <p>
+              What is backend web development? A complete overview. New video is
+              up!
+            </p>
+          </div>
+        </div>
+        <div class="youtube-link-section">
+          <div class="youtube-link-container">
+            <div class="youtube-link-thumnail-section"></div>
+            <div class="youtube-link-details">
+              <div class="youtube-site-div">
+                <p class="youtube-site-text">youtube.com</p>
+              </div>
+              <div class="youtube-video-title-section">
+                <p class="youtube-video-title">
+                  Backend web development - a complete overview (2021)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Exercise 4</title>
+    <style>
+      body {
+        padding-bottom: 1000px;
+      }
+      h1 {
+        text-decoration: underline;
+        text-align: center;
+      }
+      .main-container {
+        border: 1px solid black;
+        margin: 50px;
+        padding: 20px;
+        width: 200px;
+      }
+      .item-container {
+        width: 100%;
+        position: relative;
+      }
+      .item {
+        width: 100%;
+      }
+      .discount {
+        position: absolute;
+        background-color: black;
+        color: white;
+        top: 10px;
+        right: 0;
+        font-family: arial;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 12px;
+      }
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100px;
+        background-color: rgb(255, 255, 255, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .add-to-cart-button {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-family: arial;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Items Page (Two items as of right now...)</h1>
+    <div class="main-container">
+      <div class="item-container">
+        <img class="item" src="/thumbnails/Registration.jpeg" alt="" />
+        <div class="discount">20% OFF</div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="item-container">
+        <img class="item" src="/thumbnails/Registration.jpeg" alt="" />
+        <div class="overlay">
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="discount">20% OFF</div>
+      </div>
+    </div>
+  </body>
+</html>

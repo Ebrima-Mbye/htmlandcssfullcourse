@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 06-07-24, 17:40 (done - started at the morning and paused a bit later), booys' house -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div manipulation</title>
+    <style>
+        button {
+            font-weight: bold;
+            border: 1px solid gray;
+        }
+        .red-box {
+            background-color: red;
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            margin: 0 20px 20px 20px;
+        }
+        .green-circle {
+            background-color: green;
+            width: 70px;
+            height: 70px;
+            display: inline-block;
+            border-radius: 35px;
+            margin: 0 20px 20px 20px;
+        }
+        .sarvice-satisfaction-question {
+            font-weight: bold;
+            border: 1px solid black;
+            width: 300px;
+            padding: 10px 10px 20px 10px;
+            font-family: arial;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .youtube-music-install-prompt {
+            background-color: black;
+            width: 330px;
+            display: block;
+            color: rgb(161, 152, 152);
+            padding: 1px 20px 1px 20px;
+            margin-bottom: 30px;
+        }
+        .installation-heading {
+            color: white;
+            font-weight: bold;
+            font-family: arial;
+            font-size: 25px;
+        }
+        .facebook-friends {
+            width: 200px;
+        }
+        img {
+            width: 130px;
+            height: 180px;
+            display: block;
+            object-fit: cover;
+        }
+        .facebook-friend {
+            font-family: Arial; 
+            border: 1px solid gray;
+            width: 130px;
+            padding: 10px 10px 10px 10px;
+            box-shadow: 2px 2px 10px rgb(159, 158, 158);
+        }
+        .friend-name {
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+        .mutual-friends-count {
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .add-friend-button {
+            background-color: rgb(64, 85, 206);
+            color: white;
+            padding: 10px 10px 10px 10px;
+            margin-top: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="red-box"></div>
+    <div class="green-circle"></div>
+    <div class="sarvice-satisfaction-question">
+        <p>Satisfied with out service?</p>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+    <div class="youtube-music-install-prompt">
+        <p class="installation-heading">Install YouTube Music</p>
+        <p>Add YouTube Music to your desktop for quick and easy access</p>
+    </div>
+    <div class="facebook-friend">
+        <img src="/thumbnails/Ebrima.jpg">
+        <p class="friend-name">Ebrima</p>
+        <p class="mutual-friends-count">100 mutual friends</p>
+        <button class="add-friend-button">Add Friend</button>
+    </div>
+</body>
+</html>

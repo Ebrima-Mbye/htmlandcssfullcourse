@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Exercise 2</title>
+    <style>
+      .facebook-friend {
+        margin-bottom: 100px;
+        font-family: Arial;
+        width: 155px;
+        height: 300px;
+        padding: 10px 10px 10px 10px;
+        box-shadow: 2px 2px 2px rgb(182, 182, 182);
+        display: grid;
+        grid-template-rows: 185px 1fr;
+      }
+      .contact-picure {
+        width: 100%;
+        height: 180px;
+        display: block;
+        object-fit: cover;
+        margin-bottom: 0;
+      }
+      .mutual-friends-count {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .contact-name {
+        width: 100%;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 5;
+        margin-bottom: 0;
+      }
+      .contact-profile-picture {
+        width: 100%;
+        height: 50%;
+        border-radius: 50px;
+      }
+      .contact-info {
+        display: grid;
+        grid-template-rows: 30px 45px 1fr;
+      }
+      .contact-profile-and-mutual-friends-count-section{
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        vertical-align: top;
+        padding-top: 8px;
+      }
+      .mutual-friend-count {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 0;
+        padding-left: 8px;
+      }
+      .add-friend-button {
+        background-color: rgb(64, 85, 206);
+        color: white;
+        padding: 10px 10px 10px 10px;
+        width: 65%;
+        margin-top: 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Facebook Friend Card Desgin ~ Ebrima Mbye</h1>
+    <hr>
+    <h2><u>First Design</u></h2>
+    <div class="facebook-friend">
+      <img class="contact-picure" src="/thumbnails/Ebrima.jpg" />
+      <p class="friend-name">Ebrima</p>
+      <p class="mutual-friends-count">100 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <!-- ------------------- -->
+
+    <h2><u>Second Design</u></h2>
+    <div class="facebook-friend">
+
+      <div class="contact-picure-section">
+        <img class="contact-picure" src="/thumbnails/Ebrima.jpg" />
+      </div>
+
+      <div class="contact-info">
+
+        <div class="contact-name-section">
+            <p class="contact-name">Ebrima</p>
+        </div>
+            
+            <div class="contact-profile-and-mutual-friends-count-section">
+                <div>
+                    <img class="contact-profile-picture" src="/thumbnails/Ebrima.jpg" />
+                </div>
+                <div>
+                    <p class="mutual-friend-count">100 mutual friends</p>
+                </div>
+            </div>
+
+        <div class="add-friend-section">
+          <button class="add-friend-button">Add Friend</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ------------------- -->
+  </body>
+</html>

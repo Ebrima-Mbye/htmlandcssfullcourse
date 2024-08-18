@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Exercise 4 Clone</title>
+    <style>
+      body {
+        margin-bottom: 1000px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        height: 20px;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .thirteen-c-combination-version {
+        margin-top: 30px;
+        width: 390px;
+        height: 270px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        font-family: arial;
+        border: 1px solid rgb(182, 182, 182);
+        box-shadow: 2px 2px 2px rgb(182, 182, 182);
+        margin-bottom: 10px;
+      }
+      .thirteen-c {
+        margin-top: 30px;
+        width: 390px;
+        height: 110px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        font-family: arial;
+        border: 1px solid rgb(182, 182, 182);
+        box-shadow: 2px 2px 2px rgb(182, 182, 182);
+        margin-bottom: 70px;
+      }
+      .email-category-div {
+        height: 25px;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        padding-left: 10px;
+        font-size: 13px;
+        color: gray;
+        font-weight: bold;
+      }
+      .email-info {
+        flex: 1;
+        display: flex;
+        max-height: 80px;
+        min-height: 80px;
+      }
+      .email-sender-profile-section {
+        width: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5px;
+        margin-right: -10px;
+      }
+      .email-sender-profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: -15px;
+        margin-right: -5px;
+      }
+      .email-texts-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .email-sender-and-time-section {
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+      }
+      .email-sender-and-time-section,
+      .email-title-section,
+      .email-body-preview-section {
+        padding-left: 10px;
+      }
+      .email-sender {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .email-time {
+        font-size: 12px;
+      }
+      .email-title-section {
+        height: 20px;
+      }
+      .email-title {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .email-body-preview-section {
+        flex: 1;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desing the Gmail app of iOS</h1>
+
+    <h2><u>First Design - single email</u></h2>
+    <div class="thirteen-c">
+      <div class="email-category-div">
+        <p class="email-category">ALL INBOXES</p>
+      </div>
+      <div class="email-info">
+        <div class="email-sender-profile-section">
+          <img
+            class="email-sender-profile"
+            src="/channel-pictures/channel-3.jpeg"
+          />
+        </div>
+        <div class="email-texts-section">
+          <div class="email-sender-and-time-section">
+            <div class="email-sender-section">
+              <p class="email-sender">Chewy Promotions</p>
+            </div>
+            <div class="email-time-section">
+              <p class="email-time">4:58 PM</p>
+            </div>
+          </div>
+          <div class="email-title-section">
+            <p class="email-title">Biggest sales of the year!</p>
+          </div>
+          <div class="email-body-preview-section">
+            <p class="email-body-preview">
+              Hey there! We're writing to tell you about our...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------ -->
+
+    <h2><u>Second design - multiple emails</u></h2>
+    <div class="thirteen-c-combination-version">
+      <div class="email-category-div">
+        <p class="email-category">ALL INBOXES</p>
+      </div>
+      <div class="email-info">
+        <div class="email-sender-profile-section">
+          <img
+            class="email-sender-profile"
+            src="/channel-pictures/channel-3.jpeg"
+          />
+        </div>
+        <div class="email-texts-section">
+          <div class="email-sender-and-time-section">
+            <div class="email-sender-section">
+              <p class="email-sender">Chewy Promotions</p>
+            </div>
+            <div class="email-time-section">
+              <p class="email-time">4:58 PM</p>
+            </div>
+          </div>
+          <div class="email-title-section">
+            <p class="email-title">Biggest sales of the year!</p>
+          </div>
+          <div class="email-body-preview-section">
+            <p class="email-body-preview">
+              Hey there! We're writing to tell you about our...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="email-info">
+        <div class="email-sender-profile-section">
+          <img
+            class="email-sender-profile"
+            src="/channel-pictures/channel-2.jpeg"
+          />
+        </div>
+        <div class="email-texts-section">
+          <div class="email-sender-and-time-section">
+            <div class="email-sender-section">
+              <p class="email-sender">Best Buy</p>
+            </div>
+            <div class="email-time-section">
+              <p class="email-time">12:32 PM</p>
+            </div>
+          </div>
+          <div class="email-title-section">
+            <p class="email-title">Your Best Buy eReceipt</p>
+          </div>
+          <div class="email-body-preview-section">
+            <p class="email-body-preview">
+              Thank you for shopping at Best Buy, here is...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="email-info">
+        <div class="email-sender-profile-section">
+          <img
+            class="email-sender-profile"
+            src="/channel-pictures/channel-1.jpeg"
+          />
+        </div>
+        <div class="email-texts-section">
+          <div class="email-sender-and-time-section">
+            <div class="email-sender-section">
+              <p class="email-sender">Netflix</p>
+            </div>
+            <div class="email-time-section">
+              <p class="email-time">9:00 AM</p>
+            </div>
+          </div>
+          <div class="email-title-section">
+            <p class="email-title">Here's whats' coming soon to Netflix</p>
+          </div>
+          <div class="email-body-preview-section">
+            <p class="email-body-preview">
+              Brand new movies and shows, old favorites...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------- -->
+  </body>
+</html>

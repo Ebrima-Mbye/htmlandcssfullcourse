@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snap cards</title>
+    <style>
+      body,
+      html {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .wrapper {
+        display: flex;
+        gap: 20px;
+        width: 300px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
+      .card {
+        scroll-snap-align: center;
+        box-sizing: border-box;
+        padding: 20px 30px;
+        flex-shrink: 0;
+        width: 300px;
+        background-color: white;
+        border-radius: 14px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <h2>Card 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+          illum, ab itaque, optio omnis nihil voluptatum asperiores amet
+          quisquam quam corporis? Sequi incidunt a itaque molestias ducimus,
+          laborum cupiditate enim.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Card 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+          illum, ab itaque, optio omnis nihil voluptatum asperiores amet
+          quisquam quam corporis? Sequi incidunt a itaque molestias ducimus,
+          laborum cupiditate enim.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Card 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+          illum, ab itaque, optio omnis nihil voluptatum asperiores amet
+          quisquam quam corporis? Sequi incidunt a itaque molestias ducimus,
+          laborum cupiditate enim.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Card 4</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+          illum, ab itaque, optio omnis nihil voluptatum asperiores amet
+          quisquam quam corporis? Sequi incidunt a itaque molestias ducimus,
+          laborum cupiditate enim.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Card 5</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+          illum, ab itaque, optio omnis nihil voluptatum asperiores amet
+          quisquam quam corporis? Sequi incidunt a itaque molestias ducimus,
+          laborum cupiditate enim.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
